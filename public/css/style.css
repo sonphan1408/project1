@@ -1,0 +1,138 @@
+
+
+.box-header{
+   
+    background-color: #DB2A34;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+.box-header .avatar{
+    max-width: 100%; 
+    height: auto;
+}
+.box-header a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.box-header .box-search {
+    background:  #ffffff;
+    display: flex;
+   padding: 8px;
+    border-radius: 20px;
+   align-items: center;
+
+}
+.box-header .box-search .input-search{
+    border: none;
+    flex: 1;
+    outline: none;
+}
+.box-header .box-search i{
+    
+}
+
+.product-content{
+    background-image: url(https://cdn2.cellphones.com.vn/x/media/wysiwyg/AnnRec1.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.box-product {
+    border-radius: 20px;
+    position: relative;
+ background-color:white;
+   padding: 30px 15px  ;  
+   margin-bottom:40px;
+}
+.box-product .product {
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: center;
+}
+
+.box-product .product .image-product{
+    width: 200px;
+    height: 230px;
+    object-fit: contain;
+   
+}
+.box-product .product h4{
+    font-size: 18px;
+}
+.product-price{
+   margin-bottom: 10px;
+}
+.current-price{
+    color: red;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    
+}
+.old-price{
+    text-decoration: line-through;
+    color: #E6E8EC
+}
+.product-favorite{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.product-favorite .favorite-btn{
+    border: none;
+    background: none;
+    border-radius: 10px;
+    color: #769DEA;
+
+}
+.badge-discount {
+    position: absolute  ;
+    color: white;
+    background-color: #DB2A34;
+    border-radius: 0px 8px 8px 8px; 
+    top: -9px;
+    left: 30px;
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.badge-discount::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 0; 
+     height: 0; 
+  border-top: 10px solid transparent;
+ 
+  
+  border-right:10px solid #a10000; 
+  }
+  .badge-installment{
+    position: absolute  ;
+    color: #ADCAFC;
+    background-color: #DDE7FD;
+    border-radius: 0px 8px 0px 8px; 
+    top: 0px;
+    right: -10px;
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.badge-installment::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 0px;
+    width: 0; 
+     height: 0; 
+  border-bottom: 10px solid transparent;
+ 
+  
+  border-left:10px solid #DDE7FD; 
+  }
+  .product-title{
+    
+  }

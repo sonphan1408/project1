@@ -1,0 +1,35 @@
+extends ../../layouts/default.pug
+
+block main 
+  .product-content
+    .container
+      .row.g-3
+        
+        if products && products.length > 0
+          each item in products
+            .col-xl-3
+              .box-product
+                .product
+                  .product-image-container.text-center
+                    //- Giả sử controller trả về: image, title, discount...
+                    img.image-product(src=item.thumbnail, alt=item.title)
+                    
+                    if item.discountPercentage
+                      span.badge-discount Giảm #{item.discountPercentage}% 
+                    
+                    
+                      span.badge-installment= "0%"
+                    
+                    h4.product-title= item.title
+                  
+                  .product-price.text-center
+                    span.current-price #{item.newPrice}$
+                    span.old-price #{item.price}$
+                  
+                  .product-favorite
+                    button.favorite-btn
+                      i.fa-regular.fa-heart
+                      |  Yêu thích
+        else
+          .col-12.text-center
+            p Không tìm thấy sản phẩm nào phù hợp.

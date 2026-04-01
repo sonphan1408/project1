@@ -1,0 +1,107 @@
+/* Header */
+
+
+  * {
+    box-sizing: border-box;
+}
+
+header {
+   
+    height: 60px;
+    background:#734EAA;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  
+  .header .inner-logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #DD343F;
+  }
+  /* End Header */
+  
+  /* Body */
+  
+  .body{
+    display: flex;
+    height: calc(100vh - 60px);
+  }
+  .body .sider {
+    width: 150px;
+    background: #323232;
+    color: #fff;
+   
+  
+  overflow-y: auto;
+  }
+  
+  .body .main {
+    flex: 1;
+    flex: 1; 
+    padding: 20px;
+    overflow-y: auto; 
+  }
+  /* End Body */
+  /* Sider */
+.sider .inner-menu ul {
+    list-style: none; /* */
+    padding: 0; /* */
+    margin: 0; /* */
+  }
+  
+  .sider .inner-menu ul li a {
+    color: #fff; /* */
+    display: block; /* */
+    padding: 6px 10px; /* */
+    border-bottom: 1px solid #515151; /* */
+  }
+  /* End Sider */
+  
+  [show-alert] {
+    position: fixed;   /* Cố định vị trí trên màn hình */
+    margin-left: 1000px;
+          /* Cách mép trên 70px */
+    right: 15px;       /* Cách mép phải 15px */
+    height: 50px;
+    width: 300px;
+    z-index: 9999;  /* Luôn nằm trên cùng của các phần tử khác */
+    
+  }
+  [show-alert].alert-hidden {
+    animation-name: alert-hidden; /* Gọi tên hiệu ứng bên dưới */
+    animation-duration: 0.5s;     /* Hiệu ứng diễn ra trong 0,5 giây */
+    animation-fill-mode: both;    /* Giữ nguyên trạng thái cuối cùng sau khi diễn xong */
+  }
+  @keyframes alert-hidden {
+    from {
+      right: 15px;     /* Bắt đầu tại vị trí cũ */
+    }
+    to {
+      right: -100%;    /* Trượt hết sang phải ra khỏi màn hình */
+      display: none;   /* Ẩn hoàn toàn (lưu ý: thuộc tính này không hỗ trợ animation mượt) */
+    }
+  }
+
+  [close-alert] {
+   
+    cursor: pointer;      /* Biến con trỏ thành hình bàn tay */
+    float: right;                      /* Đẩy sang bên phải */
+    font-size: 20px;      /* Tăng kích thước dấu × */
+    line-height: 20px;    /* Căn giữa theo chiều dọc */
+    padding-left: 10px;   /* Tạo khoảng cách với chữ */
+   
+  }
+  /* Image Preview */
+.image-preview {
+  width: 150px;
+  height: auto;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.image-preview[src=""] {
+  display: none;
+}

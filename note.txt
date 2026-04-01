@@ -1,0 +1,57 @@
+
+Sua create cho selected product cho dung (note: chua lam)
+
+
+Nhom quyen:
+
+
+Acount:
+
+khong do du lieu ra het 
+taoj model
+validate 
+thay doi ten multer 
+create.pug
+Acount.pug
+edit.pug
+
+
+Login:
+-   admin/pages/auth/login
+
+
+log chinh sua sanh pham
+ cai npm moment
+ chinh sua model
+ roi qua controller
+ createdBy
+ deletedBy 
+
+
+
+ java
+ file(string path,string name)
+ file(string path)
+ buferinput 2 cái
+ randomaccess 1 cái
+ checked cause
+ unchecked terminated 
+ súppend remuse()
+ thuộc lớp randomaccessFile seek(), getFilePointer(), và length().
+save java compile javas
+i[5] An error at run time
+To Compile: javac Simple.java To Run: java Simple
+public static void main khong truy cập đuọc vào các biến ko phải là static
+
+
+ .net 
+ ngoai tru cil
+ A property cannot be either read or write only
+ GAC D. Stores the .net assemblies which are shared between multiple application
+ công việc của CLR CHỌN HẾT
+ GC.SuppressFinalize().
+ khai báo gioong class la construtor conf project la partial
+ order console application
+ GEOSHAPE virtual
+ A. Simple Object Access Protocol
+ start form
